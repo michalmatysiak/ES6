@@ -16,17 +16,16 @@ console.log(multiply());
 // 3.
 
 const average = (...numbers) =>
-	console.log(numbers.reduce((a, b) => a + b) / numbers.length);
-average(1);
-average(1, 3);
-average(1, 3, 6, 6);
+	numbers.reduce((a, b) => a + b) / numbers.length;
+console.log(average(1));
+console.log(average(1, 3));
+console.log(average(1, 3, 6, 6));
 
 // 4.
 
 const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 
-const avg = (...grades) =>
-	console.log(grades.reduce((a, b) => a + b) / grades.length);
+const avg = (...grades) => grades.reduce((a, b) => a + b) / grades.length;
 console.log(avg(...grades));
 
 // 5.
